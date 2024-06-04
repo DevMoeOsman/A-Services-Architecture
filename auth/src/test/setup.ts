@@ -47,17 +47,5 @@ global.signin = async () => {
 
   const cookie = response.get('Set-Cookie');
 
-  return cookie;
+  return cookie || [];
 };
-function beforeAll(arg0: () => Promise<void>) {
-  throw new Error('Function not implemented.');
-}
-
-function beforeEach(arg0: () => Promise<void>) {
-  throw new Error('Function not implemented.');
-}
-
-function afterAll(arg0: () => Promise<void>) {
-  throw new Error('Function not implemented.');
-}
-
